@@ -33,6 +33,12 @@ public class Product {
 	@Column(name="quantity_per_unit")
 	private String quantityPerUnit;
 	
+	public Product() {
+	
+	}
+	
+	
+	
 	public Product(int id, int categoryId, String productName, double unitPrice, short unitsInStock,
 			String quantityPerUnit) {
 		super();
@@ -79,5 +85,8 @@ public class Product {
 	public void setQuantityPerUnit(String quantityPerUnit) {
 		this.quantityPerUnit = quantityPerUnit;
 	}
+	
+
+	
 
 }
